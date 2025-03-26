@@ -20,3 +20,38 @@ Today, I’m reviving this idea with a data-driven lens — by building an **ETL
 - Clean and structure data from CSV/APIs
 - Store in queryable format (SQLite DB)
 - Generate pricing reports by region/product
+
+
+
+---
+
+## 📊 Phase 2: Exploratory Data Analysis (EDA)
+
+After cleaning the raw agri-commodity data, I conducted exploratory data analysis to uncover trends and insights valuable for decision-making in agri-logistics and delivery platforms.
+
+### 🔍 Key Insights
+
+- **🥔 Top Commodities**: Potato, Onion, and Brinjal were the most frequently traded crops.
+- **📍 State-wise Averages**: Goa, Meghalaya, and Delhi had the highest average modal prices.
+- **📈 Tomato Price Spike**: A major surge in tomato prices occurred around August 1, 2023.
+- **📦 Price Volatility**: Tomato and Bhindi showed high volatility, while Wheat and Banana remained stable.
+
+These insights simulate how data-driven decisions could enhance crop delivery, farmer payouts, and inventory strategy for DesiCultor — the agri-startup I co-founded during the COVID-19 lockdown.
+
+---
+
+
+---
+
+## 🔮 Bonus: Predictive Modeling (Phase 2.5)
+
+As a bonus step, I trained a basic Linear Regression model to forecast tomato prices based on historical trends.
+
+### ⚠️ Observations:
+- 🔵 The actual modal price of tomato dropped significantly during August 2023.
+- 🔴 The linear regression model failed to capture this — it predicted a flat upward trend.
+- This illustrates the complexity and volatility in agri-price data, highlighting the need for more advanced models in future phases.
+
+> Future plan: Experiment with ARIMA, Prophet, or LSTM to capture non-linear trends more accurately.
+
+---
