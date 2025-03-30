@@ -55,3 +55,28 @@ As a bonus step, I trained a basic Linear Regression model to forecast tomato pr
 > Future plan: Experiment with ARIMA, Prophet, or LSTM to capture non-linear trends more accurately.
 
 ---
+
+📦 Phase 3: ETL Automation + SQLite Database Integration
+
+In this phase, I elevated the DesiCultor pipeline from one-time analysis to an automated, modular data engineering system.
+
+🔁 Key Additions
+	•	📥 Modular Extraction: Automatically detects and loads the latest CSV from the data/raw/ folder.
+	•	🧹 Reusable Cleaning Functions: Built clean_data.py with cleaning logic that can be reused for any structured dataset.
+	•	🚦 Orchestrated ETL Flow: Created run_etl.py, a central controller that triggers the full Extract → Transform → Load sequence in one run.
+	•	💾 Processed Output: Cleaned data is saved as cleaned_data.csv under data/processed/.
+	•	🛢️ SQLite Integration: The same cleaned data is inserted into a local data_store.db for historical tracking, analysis, and simulation of cloud data warehouse workflows.
+
+💡 Why This Matters
+
+With this structure, DesiCultor’s data pipeline can now:
+	•	Handle real-time or batch file arrivals
+	•	Clean and standardize data on-the-fly
+	•	Store results both as CSV and in a queryable database
+	•	Be easily extended to support APIs and cloud storage (like AWS S3 or RDS)
+
+This phase bridges the gap between basic analysis and real-world data engineering systems — and it sets the stage for future enhancements like cloud deployment, dashboards, and automated reporting.
+
+Note: 💭 The entire pipeline can now simulate a live ingestion setup — making it a production-ready foundation for modern agri-tech platforms.
+
+---
