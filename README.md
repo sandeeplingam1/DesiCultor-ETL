@@ -80,3 +80,17 @@ This phase bridges the gap between basic analysis and real-world data engineerin
 Note: 💭 The entire pipeline can now simulate a live ingestion setup — making it a production-ready foundation for modern agri-tech platforms.
 
 ---
+
+---
+
+## 📊 Phase 4: Interactive Dashboard with Streamlit
+
+In Phase 4, I built a visually appealing web dashboard using Streamlit and Plotly.
+
+### 🧩 Features:
+- Interactive tabs for viewing crop trends, state-wise prices, and data explorer
+- Live filters for commodity and state, applied across all views
+- Real-time metrics showing total records, highest modal price, and top-performing state
+- Responsive design and agriculture-friendly color palette
+
+This dashboard transforms the cleaned data into actionable visuals, offering a simulation of what a real-time agri-pricing dashboard could look like in a farm-to-door delivery model.
